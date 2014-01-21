@@ -28,6 +28,7 @@ describe "Creating a new movie" do
     
     expect(page).to have_text('New Movie Title')
     expect(page).to have_text('The award-winning cast')
+    expect(page).to have_text('Movie successfully created!')
   end
   
   it "does not save the movie if it's invalid" do

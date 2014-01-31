@@ -7,7 +7,7 @@ script:
 notifications:
   campfire:
     rooms:
-      secure: C3DQpgzYdL0vUdBtnAa40tN1TovFJFXn20S5z4SoOKt3uoKGOfu22GYrcxM/9RNRqwVyIvNBZuzouAfSJ7KSRKFWMDtnff6jqsvxT2x3CQgKcRhyRyNm28Om37ars/3GhL8Au1rH/haZmoFZdMqtmuVF6+XKwU3NAcI62npaPKQ=
+      secure: MRPSZnagNtDzqdc1Eh/XuB611QQEwkxm1U6Yaj/K2ByDFL+VgGNEQgeNu3Ug47YZIp5ThMusyCsTDfEgRbaHPGkKHTFPPYmQFF40ZRxqREQo1/ZmsvTCgOnHRselC9pf4p3mGnUuD1qhNi7RMqxZnmrn4lkxp/GyKi2jAgODPtY=
     template:
     - "%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %{message}"
     - "Change view : %{compare_url}"

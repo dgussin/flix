@@ -12,7 +12,7 @@ describe "Viewing the list of movies" do
                           cast: "Robert Downey Jr., Gwyneth Paltrow and Terrence Howard",
                           director: "Jon Favreau",
                           duration: "126 min",
-                          image_file_name: "ironman.jpg")
+                          image: open("#{Rails.root}/app/assets/images/ironman.jpg"))
   
     movie2 = Movie.create(movie_attributes(title: "Superman",
                           rating: "PG",
@@ -37,7 +37,7 @@ describe "Viewing the list of movies" do
     expect(page).to have_text(movie1.description[0..9])
     expect(page).to have_text("$318,412,101.00")
     expect(page).to have_text(movie1.duration)
-    expect(page).to have_selector("img[src$='#{movie1.image_file_name}']")
+    expect(page).to have_selector("img[src$='#{movie1.image.url}']")
   end
   
   it "does not show a Movie that hasn't yet been released" do

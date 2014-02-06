@@ -51,6 +51,9 @@ group :test do
   gem "capybara", "2.1.0"
 end
 
+gem 'paperclip'
+gem 'aws-sdk'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

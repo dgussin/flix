@@ -41,6 +41,7 @@ end
 
 group :development do
   gem 'quiet_assets'
+  gem 'byebug'
 end
 
 group :test, :development do

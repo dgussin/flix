@@ -17,7 +17,7 @@ Movie.create!([
     cast: "Robert Downey Jr., Gwyneth Paltrow and Terrence Howard",
     director: "Jon Favreau",
     duration: "126 min",
-    image_file_name: "ironman.jpg"
+#    image_file_name: "ironman.jpg"
   },
   {
     title: "Superman",
@@ -28,7 +28,7 @@ Movie.create!([
     cast: "Christopher Reeve, Margot Kidder and Gene Hackman",
     director: "Richard Donner",
     duration: "143 min",
-    image_file_name: "superman.jpg"
+#    image_file_name: "superman.jpg"
   },
   {
     title: "Spider-Man",
@@ -39,7 +39,7 @@ Movie.create!([
     cast: "Tobey Maguire, Kirsten Dunst and Willem Dafoe",
     director: "Sam Raimi",
     duration: "121 min",
-    image_file_name: "spiderman.jpg"
+#    image_file_name: "spiderman.jpg"
   },
   {
     title: "Batman vs. Godzilla", 
@@ -50,7 +50,7 @@ Movie.create!([
     cast: "Bruce Wayne, Gojira",
     director: "Ishiro Honda",
     duration: "211 min",
-    image_file_name: "batman-vs-godzilla.jpg"
+#    image_file_name: "batman-vs-godzilla.jpg"
   },
   {
     title: "Catwoman",
@@ -61,7 +61,7 @@ Movie.create!([
     cast: "Halle Berry, Sharon Stone and Benjamin Bratt",
     director: "Jean-Christophe 'Pitof' Comar",
     duration: "101 min",
-    image_file_name: "catwoman.jpg"
+#    image_file_name: "catwoman.jpg"
   }
 ])
     

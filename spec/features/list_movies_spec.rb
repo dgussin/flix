@@ -37,7 +37,7 @@ describe "Viewing the list of movies" do
     expect(page).to have_text(movie1.description[0..9])
     expect(page).to have_text("$318,412,101.00")
     expect(page).to have_text(movie1.duration)
-    expect(page).to have_selector("img[src$='#{movie1.image.url}']")
+    expect(page).to have_selector("img[src$='#{movie1.image.url(:small)}']")
   end
   
   it "does not show a Movie that hasn't yet been released" do

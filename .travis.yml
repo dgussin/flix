@@ -5,10 +5,10 @@ script:
 - bundle exec rake db:test:prepare
 - bundle exec rspec
 notifications:
-  campfire:
+  hipchat:
     rooms:
-      secure: MRPSZnagNtDzqdc1Eh/XuB611QQEwkxm1U6Yaj/K2ByDFL+VgGNEQgeNu3Ug47YZIp5ThMusyCsTDfEgRbaHPGkKHTFPPYmQFF40ZRxqREQo1/ZmsvTCgOnHRselC9pf4p3mGnUuD1qhNi7RMqxZnmrn4lkxp/GyKi2jAgODPtY=
+      secure: gDs94Owz08vP3nGmT7T4wcsw7PmJms59xcRHNND3UA5ta0r26+Gp16T2Kvv3immo1fj20PFldq1kxB0MEKITOrWMqWrYSnTXbQbwOoi0w4J+HumhMzn1XC/k0r4LJsvH1PZkcadrdFWTvCbAxtPRJ3R6EKkZkA6xl0cLz6gaZb0=
     template:
-    - "%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %{message}"
-    - "Change view : %{compare_url}"
-    - "Build details : %{build_url}"
+    - '%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %{message}'
+    - 'Change view : %{compare_url}'
+    - 'Build details : %{build_url}'

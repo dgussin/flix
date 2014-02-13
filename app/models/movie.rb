@@ -5,7 +5,10 @@ class Movie < ActiveRecord::Base
   validates :description, length: { minimum: 25 }
   validates :total_gross, numericality: { greater_than_or_equal_to: 0 }
   
-  has_attached_file :image
+  has_attached_file :image, styles: {
+      small: "90x133>",
+      thumb: "50x50>"
+    }
   validates_attachment :image, 
     :content_type => { :content_type => ['image/jpeg', 'image/png'] },
     :size => { :less_than => 1.megabyte }

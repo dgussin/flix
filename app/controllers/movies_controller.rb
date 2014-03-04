@@ -1,7 +1,7 @@
 class MoviesController < ApplicationController
   def index
     @movies = Movie.released
-    fail
+    #fail
   end
   
   def show

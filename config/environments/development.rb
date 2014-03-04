@@ -27,3 +27,6 @@ Flix::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 end
+
+BetterErrors::Middleware.allow_ip! ENV['TRUSTED_IP'] if ENV['TRUSTED_IP']
+
